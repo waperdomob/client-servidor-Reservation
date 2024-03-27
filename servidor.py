@@ -3,6 +3,13 @@ import threading
 
 class ReservationServer:
     def __init__(self, host, port):
+        """
+        Inicializa el servidor de reservas.
+
+        Args:
+            host (str): El host en el que se ejecutará el servidor.
+            port (int): El puerto en el que escuchará el servidor.
+        """
         self.host = host
         self.port = port
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -14,6 +21,9 @@ class ReservationServer:
         self.running = True
 
     def start(self):
+        """
+        Inicia el servidor y acepta conexiones entrantes.
+        """
         while self.running:
             try:
                 client_socket, addr = self.server_socket.accept()
@@ -25,6 +35,10 @@ class ReservationServer:
                 self.stop()
 
     def stop(self):
+        """
+        Detiene el servidor y cierra todas las conexiones de clientes.
+        """
+
         self.running = False
         print("Deteniendo el servidor...")
         for client in self.clients:
@@ -33,6 +47,12 @@ class ReservationServer:
         print("Servidor detenido.")
 
     def handle_client(self, client_socket):
+        """
+        Maneja las solicitudes de un cliente específico.
+
+        Args:
+            client_socket (socket.socket): El socket del cliente.
+        """
         try:
             while self.running:
                 data = client_socket.recv(1024).decode()
