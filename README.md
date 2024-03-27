@@ -27,24 +27,24 @@ Sigue estos pasos para ejecutar la aplicación:
 
 ## Iniciar el servidor:
 
-Abre una terminal o línea de comandos.
-Navega hasta el directorio donde se encuentra el archivo servidor.py.
-Ejecuta el siguiente comando: python servidor.py
-El servidor se iniciará y mostrará un mensaje indicando que está escuchando en el host y puerto correspondientes.
+Abre una terminal o línea de comandos.  
+Navega hasta el directorio donde se encuentra el archivo servidor.py.  
+Ejecuta el siguiente comando: python servidor.py  
+El servidor se iniciará y mostrará un mensaje indicando que está escuchando en el host y puerto correspondientes.  
 ## Iniciar el cliente:
 
-Abre otra terminal o línea de comandos.
-Navega hasta el directorio donde se encuentra el archivo cliente.py.
-Ejecuta el siguiente comando: python cliente.py
-El cliente se conectará al servidor y mostrará un mensaje indicando que se ha conectado correctamente.
+Abre otra terminal o línea de comandos.  
+Navega hasta el directorio donde se encuentra el archivo cliente.py.  
+Ejecuta el siguiente comando: python cliente.py  
+El cliente se conectará al servidor y mostrará un mensaje indicando que se ha conectado correctamente.  
 
 ## Enviar comandos desde el cliente:
 
-En la terminal del cliente, ingresa uno de los siguientes comandos:
-RESERVAR Habitación 1: Realiza una reserva de un recurso disponible.
-CANCELAR Habitación 1: Cancela una reserva existente.
-LISTAR: Muestra la lista de recursos disponibles.
-SALIR: Cierra la conexión con el servidor y termina el cliente.
-El servidor responderá con un mensaje indicando el resultado de la operación.
+En la terminal del cliente, ingresa uno de los siguientes comandos:  
+RESERVAR Habitación 1: Realiza una reserva de un recurso disponible.  
+CANCELAR Habitación 1: Cancela una reserva existente.  
+LISTAR: Muestra la lista de recursos disponibles.  
+SALIR: Cierra la conexión con el servidor y termina el cliente.  
+El servidor responderá con un mensaje indicando el resultado de la operación.  
 
 Puedes ejecutar múltiples instancias del cliente y realizar reservas y cancelaciones simultáneamente. El servidor mantendrá actualizada la lista de recursos disponibles.
